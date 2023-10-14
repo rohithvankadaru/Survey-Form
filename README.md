@@ -1,2 +1,2 @@
 # Survey-Form
-open in live: https://rohithvankadaru.github.io/Survey-Form/
+Go Live: https://rohithvankadaru.github.io/Survey-Form/
