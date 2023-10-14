@@ -17,7 +17,7 @@
 }
 
 .form-entries {
-    width: 65vw;
+    width: 50vw;
     background-color: white;
     align-items: self-start;
     border-radius: 5px;
@@ -25,6 +25,7 @@
 
 .form-entries>* {
     margin: 15px;
+    margin-left: 50px;
 }
 
 .form-entries input {
