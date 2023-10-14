@@ -49,27 +49,43 @@
 
                 <div class="lable-input-container">
                     <label for="profession">Profession :</label>
-                <input type="text" id="profession" required>
+                    <input type="text" id="profession" required>
                 </div>
 
                 <div class="lable-input-container">
                     <label for="e-mail">E-mail :</label>
-                <input type="email" id="e-mail" required>
+                    <input type="email" id="e-mail" required>
                 </div>
 
                 <div class="lable-input-container">
                     <label for="mobile-number">Mobile Number :</label>
-                <input type="text" id="mobile-number" required>
+                    <input type="text" id="mobile-number" required>
                 </div>
 
                 <div class="buttons">
-                    <button type="submit" class="btn" onclick="{alert('submitted Successfully')}">Submit</button>
+                    <button type="submit" class="btn" onclick="renderAlert()">Submit</button>
                     <button type="reset" class="btn">Reset</button>
                 </div>
 
             </form>
         </div>
     </div>
+
+    <script>
+        const inputTags = Array.from(document.getElementsByTagName('input'));
+        function renderAlert() {
+            let filled = true;
+            inputTags.forEach(tag => {
+                if(!tag.value) filled = false;
+            });
+
+            if (filled) {
+                alert('Submission Successful');
+            } else {
+                alert('All fields are mandatory');
+            }
+        }
+    </script>
 
 </body>
 
